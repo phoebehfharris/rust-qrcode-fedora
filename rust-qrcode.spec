@@ -21,8 +21,9 @@ QR code encoder in Rust.}
 
 %package     -n %{crate}
 Summary:        %{summary}
-# FIXME: paste output of %%cargo_license_summary here
-License:        # FIXME
+
+# Upstream license specification: MIT/Apache-2.0
+License:        MIT OR Apache-2.0
 # LICENSE.dependencies contains a full license breakdown
 
 %description -n %{crate} %{_description}
