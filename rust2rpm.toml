@@ -1,0 +1,2 @@
+[package]
+exclude-crate-files = ["src/*.png", "src/*.pic", "src/*.svg", "examples/*.roff"]

@@ -21,10 +21,7 @@ QR code encoder in Rust.}
 
 %package     -n %{crate}
 Summary:        %{summary}
-
-# Upstream license specification: MIT/Apache-2.0
-License:        MIT OR Apache-2.0
-# LICENSE.dependencies contains a full license breakdown
+License:        (BSD-3-Clause OR Apache-2.0) AND (MIT OR Apache-2.0) AND (Unlicense OR MIT) AND (Zlib OR Apache-2.0 OR MIT)
 
 %description -n %{crate} %{_description}
 
@@ -49,6 +46,10 @@ use the "%{crate}" crate.
 %license %{crate_instdir}/LICENSE-MIT.txt
 %doc %{crate_instdir}/README.md
 %{crate_instdir}/
+%exclude %{crate_instdir}/src/*.png
+%exclude %{crate_instdir}/src/*.pic
+%exclude %{crate_instdir}/src/*.svg
+%exclude %{crate_instdir}/examples/*.roff
 
 %package     -n %{name}+default-devel
 Summary:        %{summary}
